@@ -6,8 +6,8 @@ Automated Samsung firmware extraction powered by GitHub Actions. Download partit
 
 ## Get Started
 
-### Firmware Dumper
-1. Go to **Actions** → **Firmware Dumper** → **Run workflow**
+### Images Extractor
+1. Go to **Actions** → **Images Extractor** → **Run workflow**
 2. Paste your SamFW download link
 3. Choose compression level and select partitions
 4. Run the workflow and receive your download link with MD5 checksum
@@ -22,6 +22,7 @@ Automated Samsung firmware extraction powered by GitHub Actions. Download partit
 
 - Extracts firmware from both A/B and non-A/B Samsung devices
 - Lets you pick exactly which partitions to extract
+- Extracts specific system files, folders, and APKs directly from firmware images
 - Keeps original partition names intact (`_a`, `_b`, or standard)
 - Compresses output with configurable XZ levels (0–9)
 - Uploads to GoFile automatically with MD5 verification
@@ -44,6 +45,11 @@ system, system_ext, product, vendor, vendor_boot, vendor_dlkm, system_dlkm, odm,
 | `media` | Sounds, fonts, and bootanimation |
 | `cameradata` | Camera tuning data |
 | `build.prop` | Device properties and fingerprint |
+| `saiv` | Samsung AI Vision folder |
+| `wallpaper-res.apk` | Wallpaper resources APK from priv-app |
+| `framework-res RRO` | Auto-generated RRO APK from product/overlay |
+| `super config` | Repack metadata for super.img |
+| `PIT file` | Partition Information Table from CSC |
 
 ## ⚖️ License & Terms
 
@@ -85,14 +91,31 @@ Firmware sourced from [SamFW](https://samfw.com) — third-party Samsung firmwar
 
 ---
 
-<a href="https://github.com/DevCat3" target="_blank"><img src="https://img.shields.io/badge/✨_DevCat3-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=0D1117" alt="DevCat3"></a><br>
+<table>
+<tr>
+<td align="center" width="200">
+<a href="https://github.com/DevCat3" target="_blank">
+<img src="https://github.com/DevCat3.png" width="64" height="64" style="border-radius:50%"><br>
+<b>DevCatowa</b>
+</a><br>
 <sub>For his hands-on contributions to the scripts and the inspiration that shaped the soul of this project. A real one. 🐈</sub>
-
-<a href="https://github.com/QOS3" target="_blank"><img src="https://img.shields.io/badge/✨_QOS3-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=0D1117" alt="QOS3"></a><br>
-<sub>For being our كطري. 🇶🇦</sub>
-
-<a href="https://github.com/xenoZ0x" target="_blank"><img src="https://img.shields.io/badge/✨_xenoZ0x-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=0D1117" alt="xenoZ0x"></a><br>
-<sub>For the extraordinary commitment of being alive. Truly, the bare minimum — and somehow it's enough. We see you. 🥑</sub>
+</td>
+<td align="center" width="200">
+<a href="https://github.com/QOS3" target="_blank">
+<img src="https://github.com/QOS3.png" width="64" height="64" style="border-radius:50%"><br>
+<b>QOS3</b>
+</a><br>
+<sub>For being our كطري 🇶🇦</sub>
+</td>
+<td align="center" width="200">
+<a href="https://github.com/0xNullGun" target="_blank">
+<img src="https://github.com/0xNullGun.png" width="64" height="64" style="border-radius:50%"><br>
+<b>0xNullGun</b>
+</a><br>
+<sub>For the extraordinary commitment of being alive. Truly, the bare minimum — and somehow it's enough. We see you. 🫆</sub>
+</td>
+</tr>
+</table>
 
 </div>
 
